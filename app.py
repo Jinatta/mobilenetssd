@@ -165,8 +165,8 @@ def event_handle(event):
             replyObj = TextSendMessage(text="ตัวก็ไม่ร้อนนิ")
             line_bot_api.reply_message(rtoken, replyObj)
         else :
-            headers = request.headers
-            json_headers = json.dumps({k:v for k, v in headers.items()})
+            #headers = request.headers
+            #json_headers = json.dumps({k:v for k, v in headers.items()})
             '''
             json_line = request.get_json(force=False,cache=False)
             json_line = json.dumps(json_line) 
