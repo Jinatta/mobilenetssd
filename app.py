@@ -161,6 +161,9 @@ def event_handle(event):
         elif (msg == "ทำอะไรอยู่") :
             replyObj = TextSendMessage(text="นอนอยู่")
             line_bot_api.reply_message(rtoken, replyObj)
+        elif (msg == "เป็นอะไร่เหร๋อ") :
+            replyObj = TextSendMessage(text="ตัวก็ไม่ร้อนนิ")
+            line_bot_api.reply_message(rtoken, replyObj)
         else :
             replyObj = TextSendMessage(text=msg)
             line_bot_api.reply_message(rtoken, replyObj)
