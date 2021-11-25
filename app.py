@@ -125,7 +125,6 @@ def reply(intent,text,reply_token,id,disname):
     line_bot_api.reply_message(reply_token,text_message)
 
 def event_handle(event,json_line):
-  
     try:
         userId = event['source']['userId']
     except:
